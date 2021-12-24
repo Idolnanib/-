@@ -2,13 +2,16 @@ from settings import *
 import pygame
 
 class Player:
-    def _init_(self):
+    def __init__(self):
         self.x, self.y = player_pos
+
+        #print(self.x, self.y, type(self.x), type(self.y))
         self.angle = player_angle
+
 
     @property
     def pos(self):
-        return (self.x, self.y)
+        return self.x, self.y
 
     def movement(self):
         keys = pygame.key.get_pressed()

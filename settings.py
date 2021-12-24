@@ -6,6 +6,8 @@ HEIGHT = 800
 HALF_WIDTH = WIDTH // 2
 HALF_HEIGHT = HEIGHT // 2
 
+FPS = 60
+
 # player settings
 player_pos = (HALF_WIDTH, HALF_HEIGHT)
 player_angle = 0
